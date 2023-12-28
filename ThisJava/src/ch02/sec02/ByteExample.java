@@ -1,6 +1,11 @@
 package ch02.sec02;
- 
-	//p42
+/*
+ * 날짜: 2023/12/27
+ * 이름: 윤혜지
+ * 내용: 변수 연습. 
+ * 		byte 타입 변수에 허용범위를 초과한 값 대입시
+ * 		컴파일 오류가 발생 하는 것을 알아봄. p42
+ */
 public class ByteExample {
 	public static void main(String[] args) {
 		byte var1 = -128;

@@ -1,5 +1,10 @@
 package ch02.sec04;
-//47p
+/*
+ * 날짜: 2023/12/27
+ * 이름: 윤혜지
+ * 내용: 실수 타입 연습. 
+ * 		p47
+ */
 public class FloatDoubleExample {
 	public static void main(String[] args) {
 		//정밀도 확인

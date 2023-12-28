@@ -1,5 +1,10 @@
 package ch02.sec02;
-//43
+/*
+ * 날짜: 2023/12/27
+ * 이름: 윤혜지
+ * 내용: 변수 연습. long 타입을 사용할 때
+ * 		int 타입의 허용범위를 초과하는 리터럴은 뒤에 'ㅣ' 'L'을 붙여 long 타입 값임을 알려야함. p43
+ */
 public class LongExample {
 	public static void main(String[] args) {
 		long var1 = 10;

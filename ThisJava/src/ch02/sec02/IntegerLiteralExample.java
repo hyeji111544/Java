@@ -1,6 +1,10 @@
 package ch02.sec02;
-
-//p41
+/*
+ * 날짜: 2023/12/27
+ * 이름: 윤혜지
+ * 내용: 정수타입 연습
+ * 		다양한 정수 리터럴을 int 타입 변수에 대입하여 10진수로 출력. p41
+ */
 public class IntegerLiteralExample {
 	public static void main(String[] args) {
 		int var1 = 0b1011;	//2진수
