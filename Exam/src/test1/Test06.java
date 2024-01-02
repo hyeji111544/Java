@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2023/12/28
  * 이름 : 윤혜지
- * 내용 : 자바 삼황연산자 연습문제
+ * 내용 : 자바 삼항연산자 연습문제
  */
 public class Test06 {
 	public static void main(String[] args) {

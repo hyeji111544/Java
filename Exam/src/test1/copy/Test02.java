@@ -16,15 +16,15 @@ public class Test02 {
 		String	name;
 		
 		System.out.print("올해 년도 입력 : " );
-		year = 
+		year = sc.nextInt();
 		System.out.print("태어난 년도 입력 : " );
-		birth = 
+		birth = sc.nextInt();
 		System.out.print("이름 입력 : " );
-		name = 
+		name = sc.next();
 		
 		int age = year - birth;
 		
-		System.out.("%s 님 안녕하세요. \n당신은 올해 만 %d세 입니다.", name, age);
+		System.out.printf("%s 님 안녕하세요. \n당신은 올해 만 %d세 입니다.", name, age);
 		
 		sc.close();
 		
