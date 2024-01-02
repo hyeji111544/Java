@@ -7,7 +7,7 @@ public class Car {
 	String color;
 	int speed;
 	
-	//기능(메서드) ; static 안쓸거임
+	//기능(메서드) ; static 안쓸거임 클래스 자체에 속해있기 때문
 	public void speedUp(int speed) {
 		this.speed += speed; // '.' 은 참조 연산자 this 는 int speed를 참조한다는것
 	}

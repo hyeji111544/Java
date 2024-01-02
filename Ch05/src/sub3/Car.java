@@ -1,4 +1,4 @@
-package sub2;
+package sub3;
 
 public class Car {
 	
@@ -7,11 +7,20 @@ public class Car {
 	private String color;
 	private int speed;
 	
-	//생성자  - 캡슐화된 속성을 초기화 하기 위한 메서드
+	//클래스 변수(정적변수)
+	public static int count; //count 는 car라는 Heap 이 공유해야하기 때문에 정적변수	
+	//클래스 메서드(정적메서드)
+	public static int getCount() {
+		return count;
+	}
+	
+	//생성자 - 캡슐화된 속성을 초기화 하기 위한 메서드
 	public Car(String name, String color, int speed) {
 		this.name = name;
 		this.color = color;
 		this.speed = speed;
+		//객체 생성할때 차량수를 1씩 증가
+		count++;
 	}
 	
 	
