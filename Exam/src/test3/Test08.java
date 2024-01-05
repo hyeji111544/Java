@@ -45,7 +45,7 @@ class Computer extends Product{
 public class Test08 {
 	public static void main(String[] args) {
 		
-		Television p1 = new Television("가전", 100);
+		Television p1 = new Television("가전", 100); // tv 객체 생성
 		Computer p2 = new Computer("컴퓨터", 150);
 		
 		p1.info();

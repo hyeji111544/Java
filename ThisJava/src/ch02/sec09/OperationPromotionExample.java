@@ -26,6 +26,18 @@ public class OperationPromotionExample {
 		System.out.println("result4: " + result4);
 		System.out.println("result4: " + (char)result4);
 		
+		int v8 = 10;
+		int result5 = v8 / 4;
+		System.out.println("result5 : " + result5);
+		
+		int v9 = 10;
+		double result6 = v9 / 4.0;
+		System.out.println("result6 : "+result6);
+		
+		int v10 = 1;
+		int v11 = 2;
+		double result7 = (double) v10/v11;
+		System.out.println("result7 : "+result7);
 	}
 
 }

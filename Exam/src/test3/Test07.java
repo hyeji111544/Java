@@ -10,7 +10,7 @@ class Customer {
 	protected String name;
 	protected String grade;
 	protected int point;
-	protected double pointRatio;
+	protected double pointRatio; //Customer의 생성자
 	
 	public Customer(int id, String name) {
 		this.id = id;
