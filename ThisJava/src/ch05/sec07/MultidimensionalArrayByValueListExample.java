@@ -1,10 +1,6 @@
 package ch05.sec07;
 
-/*
- * 날짜 : 2024/01/05
- * 이름 : yun hye ji
- * 내용 : 다차원 배열 생성 실습
- */
+
 public class MultidimensionalArrayByValueListExample {
 	public static void main(String[] args) {
 		
