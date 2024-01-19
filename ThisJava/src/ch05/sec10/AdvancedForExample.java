@@ -13,6 +13,8 @@ public class AdvancedForExample {
 		//배열 항목 전체 평균 구하기
 		double avg = (double)sum / scores.length;
 		System.out.println("점수 평균 = " + avg);
+		
+		
 	}
 
 }
