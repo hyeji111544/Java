@@ -8,8 +8,8 @@ public class Main5_04 {
 		Scanner sc = new Scanner(System.in);
 		
 		int[] arr = new int[9];
-		int count=0;
 		int max = 0;
+		int index = 0;
 		
 		for(int i=0; i<9; i++) {
 			
@@ -17,12 +17,12 @@ public class Main5_04 {
 			
 			if(max<=arr[i]) {
 				max = arr[i];
-				
+				index = i;
 			}
-			count++;
+			
 		}
 		System.out.println(max);
-		System.out.println(count-1);
+		System.out.println(index + 1);
 		
 	}
 

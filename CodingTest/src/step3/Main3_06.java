@@ -1,7 +1,5 @@
 package step3;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.util.Scanner;
 
 public class Main3_06 {
@@ -11,17 +9,17 @@ public class Main3_06 {
 		
 		int T = sc.nextInt();
 		
-		BufferedWriter bw = new BufferedWriter();
-		BufferedReader br = new BufferedReader();
-		
+		StringBuffer sb = new StringBuffer();
 		
 		for(int n=1; n<=T; n++) {
 			
 			int A = sc.nextInt();
 			int B = sc.nextInt();
 			
-			A+B = br.read();
+			sb.append(A+B+"\n");
 		}
+		
+		System.out.println(sb.toString());
 	}
 
 }
