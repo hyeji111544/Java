@@ -74,9 +74,13 @@ public class BankApplication {
 		System.out.println("계좌목록");
 		System.out.println("---------------");
 		
-		for(Account account : accounts) {
-			String text = "      "; 
-			System.out.println(account.getAno()+text + account.getOwner()+ text + account.getBalance());
+		for(int i = 0; i < accounts.size(); i++ ) {
+			Account account = accounts.get(i);
+			if(account != null) {
+				String text = "      "; 
+				System.out.println(account.getAno()+text + account.getOwner()+ text + account.getBalance());
+			}
+			
 		}
 		
 	}
@@ -89,7 +93,7 @@ public class BankApplication {
 		System.out.print("계좌번호: ");
 		String ano = scanner.next();
 		System.out.print("예금액: ");
-		int money = scanner.nextInt();
+		int money = Integer.parseInt(scanner.nextLine());
 		Account account = findAccount(ano);
 		if (account == null) {
 			System.out.println("결과: 계좌가 없습니다.");
@@ -107,7 +111,7 @@ public class BankApplication {
 		System.out.print("계좌번호: ");
 		String ano = scanner.next();
 		System.out.print("출금액: ");
-		int money = scanner.nextInt();
+		int money = Integer.parseInt(scanner.nextLine());
 		
 		Account account = findAccount(ano);
 		if (account == null) {
