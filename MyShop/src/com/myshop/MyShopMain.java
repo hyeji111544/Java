@@ -100,12 +100,20 @@ public class MyShopMain {
 				
 			}else if(answer == 3) {
 				// 상품목록
-				List<ProductDTO> products = productDAO.selectProductsDAO();
+				List<ProductDTO> products = productDAO.selectProductsDAO(); //난 왜 productDAO.selectProducts가 안되지?
 				
 				System.out.println("----------상품목록----------");
+				/*
 				for(ProductDTO product : products) {
 					System.out.println(product);
 				}
+				*/
+				
+				products.stream().forEach((product)->{
+					System.out.println(product);
+				// products.stream().forEach(System.out::println); 같은 코드임.
+					
+				});
 				
 				
 			}else if(answer == 4) {
@@ -115,10 +123,25 @@ public class MyShopMain {
 				if(loginedCustomer != null) {
 					System.out.println(loginedCustomer.getName()+ "님 주문할 상품번호와 수량을 입력해 주세요.");
 				}else {
-					System.out.println("로그인부터 해주세요.");
+					System.out.println("로그인을 먼저 하십시오.");
 					continue;
 				}
+				System.out.print("상품 번호: ");
+				int pordNo = Integer.parseInt(sc.next());
 				
+				System.out.print("주문 수량: ");
+				int prodCount = Integer.parseInt(sc.next());
+				
+				OrderDTO order = new OrderDTO();
+				order.setOrderProduct(pordNo);
+				order.setOrderCount(prodCount);
+				order.setOrderId(loginedCustomer.getCustId());
+				
+				orderDAO.insertOrder(order);
+								
+				System.out.println("주문 완료.");
+				
+				/*
 				OrderDTO order = new OrderDTO();
 				ProductDTO product = new ProductDTO();
 				
@@ -127,14 +150,15 @@ public class MyShopMain {
 				order.setOrderProduct(sc.nextInt());
 				product.setProdNo(order.getOrderProduct());
 				
-				System.out.print("주문 갯수: ");
+				System.out.print("주문 수량: ");
 				order.setOrderCount(sc.nextInt());
 				product.setStock(order.getOrderCount());
 				
 				orderDAO.insertOrder(order);
-				productDAO.updateProductDAO(product);
+				productDAO.updateProduct(product);
 				
 				System.out.println("주문이 완료되었습니다.");
+				*/
 			}
 		}
 		

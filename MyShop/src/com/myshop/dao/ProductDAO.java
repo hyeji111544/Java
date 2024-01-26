@@ -31,8 +31,10 @@ public class ProductDAO extends DBHelper{
 		try{
 			conn = getConnection(); //커넥션 받아오고
 			
-			psmt = conn.prepareStatement(SQL.SELECT_PRODUCTS);
-			rs = psmt.executeQuery();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(SQL.SELECT_PRODUCTS); //파라미터가 없어서 stmt 사용.
+			//psmt = conn.prepareStatement(SQL.SELECT_PRODUCTS);
+			//rs = psmt.executeQuery();
 			
 			while(rs.next()) {
 				
@@ -51,9 +53,9 @@ public class ProductDAO extends DBHelper{
 		}
 		return products;
 	}
-	public void updateProductDAO(ProductDTO dto) {
-		
-		System.out.println(dto);
+	public void updateProduct(ProductDTO dto) {
+		//상품 명이나 다른거 조절할 때 쓰는 CRUD라 여기서 하지말자.
+		/*System.out.println(dto);
 		
 		try {
 			conn = getConnection();
@@ -67,6 +69,8 @@ public class ProductDAO extends DBHelper{
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+	*/
 	}
 	public void deleteProductDAO(int OrderNo) {}
 

@@ -15,7 +15,7 @@ public class SQL {
 	public static final String DELETE_CUSTOMER ="";
 	
 	// Order
-	public static final String INSERT_ORDER ="insert into `order` set "
+	public static final String INSERT_ORDER ="INSERT INTO `order` SET"
 															+ "`orderNo`=null, "
 															+ "`orderId`=?, "
 															+ "`orderProduct`=?, "
@@ -34,6 +34,7 @@ public class SQL {
 	public static final String INSERT_PRODUCT ="";
 	public static final String SELECT_PRODUCT ="";
 	public static final String SELECT_PRODUCTS ="SELECT * FROM `Product`";
-	public static final String UPDATE_PRODUCT ="update `product` set `stock` = `stock` - ? where `prodNo`=?";
+	public static final String UPDATE_PRODUCT ="";
+	public static final String UPDATE_PRODUCT_STOCK ="UPDATE `product` SET `stock` = `stock` - ? WHERE `prodNo`=?";
 	public static final String DELETE_PRODUCT ="";
 }
